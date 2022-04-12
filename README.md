@@ -1,9 +1,9 @@
 This repo is a "how to" consume onprem data in a nodejs instance running in SAP BTP Cloud Foundry Environment.
 
-Summary:
-- Setup SAP Cloud Connector instance.
-- Create destination in SAP BTP subaccount to the virtual host registered at Cloud Connector.
-- Tips in the project
+# Summary
+--* Setup SAP Cloud Connector instance.
+--* Create destination in SAP BTP subaccount to the virtual host registered at Cloud Connector.
+--* Tips in the project
 __________________________________________________________________
 
 - Setup SAP Cloud Connector instance.
