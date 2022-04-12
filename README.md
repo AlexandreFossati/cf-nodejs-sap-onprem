@@ -7,7 +7,7 @@ This repo is a "how to" consume onprem data in a nodejs instance running in SAP 
 ## Setup SAP Cloud Connector instance.
 1. Download SAP Cloud Connector from https://tools.hana.ondemand.com/
 2. Extract the .zip file and open the **"go.bat"** file.
-3. Go to [localhost:8443](http://localhost:8483) and login (User: Administrator Password: manage)
+3. Go to [localhost:8443](localhost:8483) and login (User: Administrator Password: manage)
 4. Click add subaccount and fill the required info
     - **Region:** *Region URL in the subaccount overview page*
     - **Subaccount:** *is the subaccount ID*
@@ -50,9 +50,8 @@ This repo is a "how to" consume onprem data in a nodejs instance running in SAP 
     - WebIDEUsage: odata_abap,odata_gen,ui5_execute_abap,dev_abap,bsp_execute_abap,smart_business_odata,smart_business_gen
     - sap-client: 210 (this is the sap mandt)
     - sap-platform: ABAP
-__________________________________________________________________
 
-- Tips in the project
+## Tips in the project
 1. approuter: The important about approuter is the xs-app.json, it uses the "destination": "backend-dest", which is configured in the "manifest.yaml" file.
 2. manifest.yaml: This file uses 3 services, but do not create them, so we need to create this services before deploy the project to the BTP.
     - Make sure that you are logged in to the CF CLI before execute the following commands.
