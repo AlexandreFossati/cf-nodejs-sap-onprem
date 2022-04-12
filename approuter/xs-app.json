@@ -1,0 +1,9 @@
+{
+    "routes": [
+        {
+            "source": "^/backend",
+            "target": "/",
+            "destination": "backend-dest"
+        }
+    ]
+}

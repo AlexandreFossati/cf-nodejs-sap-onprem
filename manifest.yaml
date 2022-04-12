@@ -1,0 +1,30 @@
+applications:
+
+- name: mymiddleware
+  path: srv
+  routes:
+    - route: mymiddleware-nodejs.cfapps.eu10.hana.ondemand.com
+  buildbacks:
+    - nodejs_buildpack
+  services:
+    - mymiddleware-uaa
+    - mymiddleware-dest
+    - mymiddleware-connectivity
+
+- name: mymiddleware-approuter
+  path: approuter
+  routes:
+    - route: mymiddleware-approuter.cfapps.eu10.hana.ondemand.com
+  buildbacks:
+    - nodejs_buildpack
+  services:
+    - mymiddleware-uaa
+  env:
+    destinations: >
+      [
+        {
+          "name": "backend-dest",
+          "url": "https://mymiddleware-nodejs.cfapps.eu10.hana.ondemand.com",
+          "forwardAuthToken": true
+        }
+      ]
