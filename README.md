@@ -8,8 +8,8 @@ __________________________________________________________________
 
 ## Setup SAP Cloud Connector instance.
 1. Download SAP Cloud Connector from https://tools.hana.ondemand.com/
-2. Extract the .zip file and open the "go.bat" file.
-3. Go to localhost:8443 and login (User: Administrator Password: manage)
+2. Extract the .zip file and open the **"go.bat"** file.
+3. Go to [localhost:8443](http://localhost:8483) and login (User: Administrator Password: manage)
 4. Click add subaccount and fill the required info
     - Region: Region URL in the subaccount overview page
     - Subaccount: is the subaccount ID
