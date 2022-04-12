@@ -3,8 +3,6 @@ This repo is a "how to" consume onprem data in a nodejs instance running in SAP 
 # Summary
 - Setup SAP Cloud Connector instance.
 - Create destination in SAP BTP subaccount to the virtual host registered at Cloud Connector.
-- Tips in the project
-__________________________________________________________________
 
 ## Setup SAP Cloud Connector instance.
 1. Download SAP Cloud Connector from https://tools.hana.ondemand.com/
@@ -25,7 +23,7 @@ __________________________________________________________________
     - **Princial Type:** *Kerberos*
     - **Host In Request Header:** *Use Virtual Host*
     - **Description:** *can be empty*
-7. For each virtual system mapped, you'll need to map the resources in the section below. Map all these ("Path and All Sub-Paths"):
+7. For each virtual system mapped, you'll need to map the resources in the section below. Map all these **("Path and All Sub-Paths")**:
     - /plugins/pluginrepository	
     - /sap/bc/adt	
     - /sap/bc/bsp	
@@ -34,9 +32,7 @@ __________________________________________________________________
     - /sap/opu/odata
 8. Verify in the subaccount if you can see the Cloud Connector connection.
 
-__________________________________________________________________
-
-- Create destination in SAP BTP subaccount to the virtual host registered at Cloud Connector.
+## Create destination in SAP BTP subaccount to the virtual host registered at Cloud Connector.
     - Name: OnPremDestination (choose the name you want, but pay attention to use the same name inside your project)
     - Type: HTTP
     - Description: whatever you want
