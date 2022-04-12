@@ -59,9 +59,9 @@ This repo is a "how to" consume onprem data in a nodejs instance running in SAP 
     - **Make sure that you are logged in to the CF CLI before execute the following commands.**
     - **Make sure you are in the root project folder in the terminal (the last command line uses the path to the xs-security file, so if you are in the wrong folder, it'll not work)**
 
-    | cf create-service destination lite mymiddleware-dest                     |
-    | cf create-service connectivity lite mymiddleware-connectivity            |
-    | cf create-service xsuaa application mymiddleware-uaa -c xs-security.json |
+    1. cf create-service destination lite mymiddleware-dest
+    2. cf create-service connectivity lite mymiddleware-connectivity
+    3. cf create-service xsuaa application mymiddleware-uaa -c xs-security.json
 
 3. **manifest.yaml routes:** We are defining routes for our services, so make sure they are unique and are under your currently region of the subaccount.
     - mymiddleware-nodejs.cfapps.**{eu10}**.hana.ondemand.com
