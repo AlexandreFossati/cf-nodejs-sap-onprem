@@ -6,7 +6,7 @@ This repo is a "how to" consume onprem data in a nodejs instance running in SAP 
 - Tips in the project
 __________________________________________________________________
 
-- Setup SAP Cloud Connector instance.
+## Setup SAP Cloud Connector instance.
 1. Download SAP Cloud Connector from https://tools.hana.ondemand.com/
 2. Extract the .zip file and open the "go.bat" file.
 3. Go to localhost:8443 and login (User: Administrator Password: manage)
