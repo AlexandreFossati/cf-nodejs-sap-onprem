@@ -56,8 +56,8 @@ This repo is a "how to" consume onprem data in a nodejs instance running in SAP 
 ## Tips for the project 💡
 1. **approuter:** The important about approuter is the xs-app.json, it uses the **"destination": "backend-dest"**, which is configured in the "manifest.yaml" file.
 2. **manifest.yaml:** This file uses 3 services, but do not create them, so we need to create this services before deploy the project to the BTP.
-    - **Make sure that you are logged in to the CF CLI before execute the following commands.**
-    - **Make sure you are in the root project folder in the terminal (the last command line uses the path to the xs-security file, so if you are in the wrong folder, it'll not work)**
+    _Make sure that you are logged in to the CF CLI before execute the following commands._
+    _Make sure you are in the root project folder in the terminal (the last command line uses the path to the xs-security file, so if you are in the wrong folder, it'll not work)_
 
     1. cf create-service destination lite mymiddleware-dest
     2. cf create-service connectivity lite mymiddleware-connectivity
